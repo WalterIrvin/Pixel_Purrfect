@@ -2189,7 +2189,7 @@ sources/2 = SubResource("TileSetAtlasSource_7tlis")
 [node name="ColorTest" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_dmphk")]
-position = Vector2(160, 160)
+z_index = 2
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_4ex27")
