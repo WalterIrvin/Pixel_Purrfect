@@ -11,5 +11,11 @@ config_version=5
 [application]
 
 config/name="Pixel_Purrfect"
+run/main_scene="res://scenes/Color_Test.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://assets/tilesets/icon.svg"
+
+[display]
+
+window/size/viewport_width=320
+window/size/viewport_height=320
