@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://wp60q6xe8euj"]
+[gd_scene load_steps=8 format=3 uid="uid://wp60q6xe8euj"]
 
 [ext_resource type="PackedScene" uid="uid://cwuknhm2dpqje" path="res://scenes/entities/Player.tscn" id="1_dmphk"]
 [ext_resource type="Texture2D" uid="uid://fb2hmk7btkrw" path="res://assets/tilesets/placeholder-tiles-flat-base-32x32-ocean-wash.png" id="2_jkc1v"]
 [ext_resource type="Texture2D" uid="uid://dp5br4sgyhei5" path="res://assets/tilesets/RGB_Tiles.png" id="3_42bgn"]
+[ext_resource type="Script" path="res://scenes/ColorClick.gd" id="4_jv0kx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5xs3x"]
 texture = ExtResource("2_jkc1v")
@@ -2175,11 +2176,56 @@ texture_region_size = Vector2i(32, 32)
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7tlis"]
 texture = ExtResource("3_42bgn")
 texture_region_size = Vector2i(32, 32)
+0:0/next_alternative_id = 6
 0:0/0 = 0
+0:0/2 = 2
+0:0/2/modulate = Color(1, 1, 1, 0.8)
+0:0/3 = 3
+0:0/3/modulate = Color(1, 1, 1, 0.6)
+0:0/4 = 4
+0:0/4/modulate = Color(1, 1, 1, 0.4)
+0:0/5 = 5
+0:0/5/modulate = Color(1, 1, 1, 0.2)
+0:1/next_alternative_id = 5
 0:1/0 = 0
+0:1/1 = 1
+0:1/1/modulate = Color(1, 1, 1, 0.8)
+0:1/2 = 2
+0:1/2/modulate = Color(1, 1, 1, 0.6)
+0:1/3 = 3
+0:1/3/modulate = Color(1, 1, 1, 0.4)
+0:1/4 = 4
+0:1/4/modulate = Color(1, 1, 1, 0.2)
+0:2/next_alternative_id = 5
 0:2/0 = 0
+0:2/1 = 1
+0:2/1/modulate = Color(1, 1, 1, 0.8)
+0:2/2 = 2
+0:2/2/modulate = Color(1, 1, 1, 0.6)
+0:2/3 = 3
+0:2/3/modulate = Color(1, 1, 1, 0.4)
+0:2/4 = 4
+0:2/4/modulate = Color(1, 1, 1, 0.2)
+0:3/next_alternative_id = 5
 0:3/0 = 0
+0:3/1 = 1
+0:3/1/modulate = Color(1, 1, 1, 0.8)
+0:3/2 = 2
+0:3/2/modulate = Color(1, 1, 1, 0.6)
+0:3/3 = 3
+0:3/3/modulate = Color(1, 1, 1, 0.4)
+0:3/4 = 4
+0:3/4/modulate = Color(1, 1, 1, 0.2)
+0:4/next_alternative_id = 5
 0:4/0 = 0
+0:4/1 = 1
+0:4/1/modulate = Color(1, 1, 1, 0.8)
+0:4/2 = 2
+0:4/2/modulate = Color(1, 1, 1, 0.6)
+0:4/3 = 3
+0:4/3/modulate = Color(1, 1, 1, 0.4)
+0:4/4 = 4
+0:4/4/modulate = Color(1, 1, 1, 0.2)
 
 [sub_resource type="TileSet" id="TileSet_4ex27"]
 tile_size = Vector2i(32, 32)
@@ -2199,3 +2245,4 @@ layer_0/tile_data = PackedInt32Array(0, 720897, 1, 65536, 720897, 2, 131072, 720
 layer_1/name = "Color"
 layer_1/z_index = 1
 layer_1/tile_data = PackedInt32Array()
+script = ExtResource("4_jv0kx")

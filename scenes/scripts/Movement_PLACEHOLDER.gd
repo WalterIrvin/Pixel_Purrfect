@@ -9,7 +9,5 @@ func _process(delta):
 	var H_Axis = Input.get_axis("ui_left", "ui_right")
 	var V_Axis = Input.get_axis("ui_down", "ui_up")
 	var offset: Vector2 = Vector2(H_Axis * delta * speed, V_Axis * delta * speed)
-	print(offset)
-	print(H_Axis, V_Axis)
 	if H_Axis or V_Axis:
 		global_translate(global_position + offset)
